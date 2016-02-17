@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.10.0
+ @version 3.10.1
 */
 FusionCharts.register("module",["private","modules.renderer.js-gradientlegend",function(){function Z(c,g,p){var m=c[0],n=c[1];c=c[2];m+=(g[0]-m)*p;n+=(g[1]-n)*p;g=c+(g[2]-c)*p;return{hex:(ua+(m<<16|n<<8|g).toString(16)).slice(-6),rgb:[m,n,g]}}function ca(c,g){return c.maxvalue-g.maxvalue}function x(c){var g,p,m=c.colorRange||{},n=c.dataMin,x=c.dataMax,t=c.sortLegend||!1,l=c.mapByCategory||!1,A=c.defaultColor,b=c.numberFormatter,d=m.color;c=this.colorArr=[];var e,h,a;this.mapByCategory=l;"1"===m.mapbypercent&&
 (this.mapbypercent=!0);if("1"===m.gradient&&!l){this.gradient=!0;p=Da($(m.startcolor,m.mincolor,m.code));t=ha(Da($(p,A,"CCCCCC")));l=this.scaleMin=H(m.startvalue,m.minvalue,this.mapbypercent?0:n);c.push({code:p,maxvalue:l,label:aa(m.startlabel),codeRGB:ha(p)});if(d&&(g=d.length))for(n=0;n<g;n+=1)A=d[n],p=Da($(A.color,A.code)),h=H(A.value,A.maxvalue),a=H(A.minvalue),h>l&&c.push({code:p,maxvalue:h,userminvalue:a,label:aa($(A.label,A.displayvalue)),codeRGB:ha(p)});c.sort(ca);g=c.length;for(n=1;n<g;n+=

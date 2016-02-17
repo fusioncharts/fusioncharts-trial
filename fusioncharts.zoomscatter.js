@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.10.0
+ @version 3.10.1
 */
 FusionCharts.register("module",["private","modules.renderer.js-zoomscatter",function(){function ba(c,b,d,a,e){var f=b.paper;this.renderer=b;this.attr=c;this.axisData={};this.axisData.paper=f;this.globalOptions=b.options;this.isVertical=a;this.isReverse=e;this.isNumeric=d;this.viewPortRatio={};this.graphics={};this.config={};this.components={};this._configure()}function ca(){}function ga(){}var L=this,u=L.hcLib,Da=u.parseTooltext,la=u.extend2,Ea=u.getLinkAction,Fa=u.NumberFormatter,M=u.Raphael,ma=
 u.addEvent,Ga=u.removeEvent,da=L.window,na=da.MouseEvent,P=da.document,y=u.BLANKSTRING,Ha=u.HASHSTRING,oa=u.getSentenceCase,pa=u.regex.dropHash,n=u.pluck,V=u.getValidValue,l=u.pluckNumber,W=u.getFirstValue,Ia=u.parseUnsafeString,qa=u.FC_CONFIG_STRING,N=u.getDashStyle,Ja=u.toRaphaelColor,H=u.toPrecision,Ka=u.hasSVG,ra=u.isIE,Z=u.hasTouch,$="rgba(192,192,192,"+(ra?.002:1E-6)+")",J=Math,Q=J.sin,R=J.cos,S=J.round,C=J.min,F=J.max,O=J.abs,sa=J.pow,ta=J.ceil,T=J.floor,La=2*Math.PI,ua=u.getMouseCoordinate,

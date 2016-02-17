@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.10.0
+ @version 3.10.1
 */
 FusionCharts.register("module",["private","modules.renderer.js-gantt",function(){var V=this,J=V.hcLib,Ea=V.window,ua=/msie/i.test(Ea.navigator.userAgent)&&!Ea.opera,rb=J.chartAPI,Pa=J.chartAPI,Qa=J.extend2,e=J.pluck,c=J.pluckNumber,pa=J.getFirstColor,Fa=J.graphics,ca=Fa.convertColor,fb=Fa.getDarkColor,hc=Fa.parseColor,Ca=J.parseUnsafeString,Ga=J.getFirstValue,Zb=J.getValidValue,ka=J.Raphael,ic=J.COMMASTRING,La=J.setLineHeight,Eb=J.getDashStyle,Fb=J.toRaphaelColor,Ra=J.each,jc=J.FC_CONFIG_STRING,Ma=
 "rgba(192,192,192,"+(ua?.002:1E-6)+")",$b=Fa.mapSymbolName,ua=Math,Ha=ua.ceil,va=ua.round,fa=ua.max,Da=ua.min,ac=ua.abs,Sa=parseInt,Gb=parseFloat,kc={pageX:0,pageY:0},Y=J.plotEventHandler,na,W,sb=J.hasTouch=void 0!==Ea.document.documentElement.ontouchstart,lc=J.addEvent,mc=J.removeEvent,Ta=function(b){return void 0!==b&&null!==b},Ua={left:"start",right:"end",center:"middle"},gb={left:0,right:1,center:.5,undefined:.5},tb={top:1,bottom:0,middle:.5,undefined:.5},Va={left:5,right:-5,center:0,undefined:0},

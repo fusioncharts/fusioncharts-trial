@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.10.0
+ @version 3.10.1
 */
 FusionCharts.register("module",["private","modules.renderer.js-treemap",function(){function G(b){return b?b.replace(/^#*/,"#"):"#E5E5E5"}function n(b,h){this.label=b;this.value=parseFloat(h,10);this.prev=this.next=void 0;this.meta={}}function F(){this._b=[];this._css=void 0;this.rangeOurEffectApplyFn=function(){};this.statePointerLow={value:void 0,index:void 0};this.statePointerHigh={value:void 0,index:void 0}}var s=this.hcLib,L=s.extend2,N=s.chartAPI,S=s.Raphael,O=s.chartAPI,H=s.graphics,K=H.convertColor,
 P=H.getLightColor,y=this.raiseEvent,T=s.colorRange,I,E,w=s.pluckNumber,t=s.pluck,H=!/fusioncharts\.com$/i.test(this.window.location.hostname);S.addSymbol({backIcon:function(b,h,a){--a;var c=h+a,f=c-a/2,g=b+a,e=f-a;return["M",b,h-a,"L",b-a,h,b,c,b,f,g,f,g,e,g-a,e,"Z"]},homeIcon:function(b,h,a){--a;var c=2*a,f=b-a,g=f+c/6,e=h+a,d=g+c/4,v=e-a/2,m=d+c/6,A=v+a/2,k=m+c/4,l=A-a;return["M",b,h-a,"L",f,h,g,h,g,e,d,e,d,v,m,v,m,A,k,A,k,l,k+c/6,l,"Z"]}});Array.prototype.indexOf||(Array.prototype.indexOf=function(b,

@@ -3,7 +3,7 @@
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 
- @version 3.10.0
+ @version 3.10.1
 */
 FusionCharts.register("module",["private","modules.renderer.js-messagelogger",function(){var $=this.hcLib,hb=$.Raphael,za,Na=$.isIE,ha=$.graphics.HEXtoRGB,G=$.graphics.convertColor,Fa,H,Ha,xa,q,B,h,Va,Aa,T,U,fa,ca,Ia,rb=this.window,qa=rb.document,wb=8===qa.documentMode,la=!0,V=!1,J=$.pluck,ua=$.pluckNumber,xb=$.FC_CONFIG_STRING,Sa={display:"block",paddingLeft:"10px",paddingRight:"10px","font-family":"Arial","font-size":"11px"},t=function(h,q){var w=this,B;q||(q="");for(B=w.indexOf(h);-1!==B;)w=w.replace(h,
 q),B=w.indexOf(h);return w};Ia=function(t,J,w){var H=t.hcJSON,U=H&&H[xb],T=J&&J.chartWidth,aa=J&&J.chartHeight,H=xa/100*T,ca=q/100*aa,ia=(T-H)/2,ja=(aa-ca)/2,ua=H-18-22,ma=ca-18-22,qa=Va,ha=Va;t=w.html("div",{fill:"transparent",width:T,height:aa},{fontSize:"10px",lineHeight:"15px",fontFamily:(U&&U.inCanvasStyle||t.inCanvasStyle).fontFamily},J&&J.container);t.veil=w.html("div",{id:"veil",fill:"000000",width:T,height:aa,opacity:.1},void 0,t).on("click",function(){fa&&$.messageLogger.close()});h&&B&&
